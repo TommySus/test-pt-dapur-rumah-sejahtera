@@ -1,0 +1,24 @@
+{
+  "name": "test-pt-dapur-rumah-sejahtera",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jquery.js",
+  "dependencies": {
+    "sweetalert2": "^11.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TommySus/test-pt-dapur-rumah-sejahtera.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TommySus/test-pt-dapur-rumah-sejahtera/issues"
+  },
+  "homepage": "https://github.com/TommySus/test-pt-dapur-rumah-sejahtera#readme"
+}

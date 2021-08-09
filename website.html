@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FORM</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="bower_components/sweetalert2/dist/sweetalert2.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav style="margin: 0; padding: 0;" class="navbar navbar-default" role="navigation">
+        <div class="beforeNavbar"></div>
+        <div class="navbar-header">
+            <a class="brand">
+                <img style="width: 180px;" src="logo.png" />
+            </a>
+        </div>
+        <div id="afterNavbar">
+            <a>You don't have an account yet, please create a new account</a>
+        </div>
+    </nav>
+    
+    <form action="submit">
+        <div class="formContent">
+            <div class="createAccount">
+                <a>Create new account</a>
+            </div>
+            <div class="titleName">
+                <a>Title</a>
+                <div class="titleCheckBox">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" name="title" type="checkbox" id="titleCheckBox1" value="Mrs">
+                        <label class="form-check-label" for="titleCheckBox1">Mrs</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" name="title" type="checkbox" id="titleCheckBox2" value="Ms">
+                        <label class="form-check-label" for="titleCheckBox2">Ms</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" name="title" type="checkbox" id="titleCheckBox3" value="Mdm">
+                        <label class="form-check-label" for="titleCheckBox3">Mdm</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" name="title" type="checkbox" id="titleCheckBox4" value="Mr">
+                        <label class="form-check-label" for="titleCheckBox4">Mr</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" name="title" type="checkbox" id="titleCheckBox5" value="Dr">
+                        <label class="form-check-label" for="titleCheckBox5">Dr</label>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-bottom: 30px;" class="fieldContent">
+                <div style="margin-left: 0px;" class="row">
+                    <div style="width: 50%;" class="form-group">
+                        <label class="required" for="inputLastName">Last name</label>
+                        <input required="required" style="width: 90%;" type="text" class="form-control" id="inputLastName" placeholder="Last name">
+                    </div>
+                    
+                    <div style="width: 50%;" class="form-group">
+                        <label class="required" for="inputFirstName">First name</label>
+                        <input required="required" style="width: 90%;" type="text" class="form-control" id="inputFirstName" placeholder="First name">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="required" for="inputMobilePhone">Mobile phone number</label>
+                    <div style="margin: 0; display: flex; flex-direction: row;" class="form-group col-7 form-inline">
+                        <div style="margin-left: -15px; width: 20%;">
+                            <select required="required" style="width: 100%;" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                              <option disabled selected>Choose...</option>
+                            </select>
+                        </div>
+                        <div style="margin-left: 30px; width: 55%;" class="input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text" id="numberCode">+43</div>
+                            </div>
+                            <input type="text" class="form-control" id="inputMobilePhone" placeholder="Mobile phone number">
+                        </div>
+                        <!-- <label class="required" for="inputMobilePhone">Mobile phone number</label>
+                        <input type="text" class="form-control" id="inputMobilePhone" placeholder="Mobile phone number"> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="address">
+                <a>Address</a>
+            </div>
+            <div class="addressField">
+                <div style="width: 100%; margin-top: 15px;" class="form-group">
+                    <label for="inputAddress">Address</label>
+                    <input required="required" style="width: 96%;" type="text" class="form-control" id="inputAddress" placeholder="Address">
+                </div>
+
+                <div style="margin-left: 0px;" class="row">
+                    <div style="width: 50%;" class="form-group">
+                        <label class="required" for="Country/Location">Country/Location</label>
+                        <select required="required" style="width: 90%;" class="form-control" id="CountryOrLocation">
+                            <option value="" disabled selected>Select Country/Location</option>
+                        </select>
+                    </div>
+                    
+                    <div style="width: 50%;" class="form-group">
+                        <label for="Province/Distric">Province/District</label>
+                        <select style="width: 90%;" class="form-control" id="ProvinceOrDistric">
+                            <option value="" disabled selected>Province/District</option>
+                        </select>                    
+                    </div>
+                </div>
+            </div>
+
+            <div class="contacts">
+                <a>Contacts</a>
+            </div>
+            <div style="margin-top: 15px;" class="contactField">
+                <div style="margin-left: 0px;" class="row">
+                    <div style="width: 50%;" class="form-group">
+                        <label class="required" for="inputEmailAddress">Email address</label>
+                        <input required="required" style="width: 90%;" type="text" class="form-control" id="inputEmailAddress" placeholder="Email address">
+                    </div>
+                    
+                    <div style="width: 50%;" class="form-group row">
+                        <div style="width: 29%; margin-left: 10px; display: flex; flex-direction: column;">
+                            <label class="required"  for="dateOfBirth">Date of birth</label>
+                            <select required="required" style="width: 100%;" class="form-control" id="dateOfBirth">
+                                <option value="" disabled selected>DD</option>
+                            </select>
+                            <div class="box2 sb10">indulge in birthday threat just for you!</div>
+                        </div>
+                        
+                        <div style="width: 29%; margin-left: 10px;">
+                            <label class="required"  for="Province/Distric">Month</label>
+                            <input required="required" style="width: 100%;" type="number" min="1" max="12" onkeyup="if(parseInt(this.value)>12 || parseInt(this.value)<1 ){ this.value =12; return false; }" class="form-control" id="bdaymonth" name="bdaymonth" placeholder="MM">
+                        </div>
+                        
+                        <div style="width: 29%; margin-left: 10px;">
+                            <label for="Province/Distric">Year</label>
+                            <input style="width: 100%;" type="number" min="1900" max="2021" onkeyup="if(parseInt(this.value)>2021){ this.value = 2021; return false; }" class="form-control" id="bdayYear" name="bdayYear" placeholder="YYYY">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="standarPrivacyNote">
+                <a>Standard Privacy Note</a>
+            </div>
+            <div style="margin-top: 10px;">
+                <div style="margin: 0; width: 95%;" class="privacyNote">
+                    <p style="font-style: italic;">
+                        I warrant that the above information is true and correct. I understand that failure to answer all questions listed in this application form may
+                        prevent L'OCCITANE from processing my application; and L'OCCITANE may refuse to accept this application in the right of my individual
+                        circumstance.
+                    </p>
+    
+                    <p style="font-style: italic;">
+                        I understand that the information collected will be used and retained by L'OCCITANE for the purpose of (1) my application of membership
+                        program of L'OCCITANE (i) providing member-exclusive services; and (iii) the daily management operation and maintenance of membership
+                        account at L'OCCITANE.
+                    </p>
+    
+                    <p style="font-style: italic;">
+                        I understand that it is necessary for me to provide L'OCCITANE with data in connection with the privilege. Failure to provide such data may result
+                        in L'OCCITANE stores or official website.
+                    </p>
+    
+                    <p style="font-style: italic;">
+                        L'OCCITANE reserves the right to change any of the terms and conditions without prior notice. Changes will be posted on signage placed at
+                        L'OCCITANE stores or official website.
+                    </p>
+    
+                    <p style="font-style: italic;">
+                        I understand that L'OCCITANE may use my personal information for the purpose of providing or promoting services/products made available by
+                        L'OCCITANE. To choose whether to receive any promotional information sent by L'OCCITANE, please tick the box below.
+                    </p>
+    
+                    <p style="font-style: italic;">
+                        I want to receive information or communication from L'OCCITANE.
+                    </p>
+                </div>
+    
+                <div style="width: 95%;" class="d-flex justify-content-between">
+                    <div style="margin: 0;" class="row">
+                        <p>SMS & Mobile Call</p>
+                        <div style="margin-left: 10px; cursor: pointer;" class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input 2" id="customSwitch1">
+                            <label class="custom-control-label" for="customSwitch1"></label>
+                        </div>
+                    </div>
+                    
+                    <div style="margin: 0;" class="row">
+                        <p>Emailing</p>
+                        <div style="margin-left: 10px; " class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                            <label class="custom-control-label" for="customSwitch2"></label>
+                        </div>
+                    </div>
+
+                    <div style="margin: 0;" class="row">
+                        <p>Mailing</p>
+                        <div style="margin-left: 10px;" class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                            <label class="custom-control-label" for="customSwitch3"></label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="width: 30%; left: 0px;" class="box sb3">
+                    Subscribe to SMS & mobile call. Email & Mailing  to receive updates about your membership perks and exclusive promotions!
+                </div>
+
+                
+                <div style="margin-top: 15px;" class="form-check">
+                    <input class="form-check-input" type="checkbox" id="agreementCheck" value="option1">
+                    <label class="form-check-label" for="agreementCheck">
+                        I have read and understood above terms and conditions and hereby agree that i will be bounded by these conditions and policies once i have submitted this application form
+                    </label>
+                </div>
+                
+            </div>
+
+        </div>
+        
+    </form>
+
+    <div style="margin-left: 50px; width: 92%;height: auto; margin-top: 20px; margin-bottom: 20px;" class="d-flex justify-content-end">
+        <button id="submitData" type="submit" style="right: 0px;">CREATE CUSTOMER</button>
+    </div>
+
+
+    <script src="{{ asset('assets/global/plugins/jquery.min.js') }}" type="text/javascript"></script>
+    <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script type="module" src="jquery.js"></script>
+</body>
+</html>

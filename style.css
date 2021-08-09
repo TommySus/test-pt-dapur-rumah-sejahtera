@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.beforeNavbar {
+    height: 10px;
+    width: 100%;
+    background-color: rgb(255, 208, 0)
+}
+.brand {
+    position: absolute;
+    left: 48%;
+    margin-left: -50px !important;  /* 50% of your logo width */
+    display: block;
+}
+.navbar-header {
+    float: left;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    height: 80px;
+}
+#afterNavbar {
+    text-align: center;
+    height: 40px;
+    background-color: rgb(255, 208, 0);
+    width: 100%;
+}
+#afterNavbar a {
+    margin-top: 8px;
+    font-weight: 700;
+    display: block;
+}
+form {
+    margin-top: 70px;
+    width: 100%;
+}
+.formContent {
+    margin-left: 50px;
+}
+.createAccount {
+    font-weight: 700;
+    font-size: 20px;
+}
+.titleName {
+    font-weight: 600;
+    margin-top: 20px;
+}
+input[type="checkbox"] {
+    border-color: blueviolet;
+}
+.fieldContent {
+    font-weight: 600;
+    margin-top: 20px;
+}
+.nameField {
+    display: flex;
+    flex-direction: row;
+}
+.required:after {
+    width: 10px; 
+    height: 20px;
+    content:" *";
+    color: red;
+}
+.address {
+    font-weight: 700;
+    font-size: 20px;
+}
+.addressField {
+    font-weight: 600;
+}
+.contacts {
+    font-weight: 700;
+    font-size: 20px;
+}
+.ui-bdaymonth-calendar {
+    display: none;
+}
+.box2 {
+    border-radius: 10px;
+    width: 100%;
+    margin: 20px auto;
+    border: 4px solid rgb(255, 208, 0);
+    background-color: rgb(255, 208, 0);
+    padding: 20px;
+    text-align: center;
+    font-weight: 600;
+    color: black;
+    position: relative;
+  }
+.sb10:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid rgb(255, 208, 0);
+    right: 50%;
+    top: -23px;
+}
+.standarPrivacyNote {
+    font-weight: 700;
+    font-size: 20px;
+}
+.box {
+    border-radius: 5px;
+    width: 300px;
+    margin-top: 10px;
+    background: rgb(255, 208, 0);
+    padding: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: black;
+    position: relative;
+}
+.sb3:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid rgb(255, 208, 0);
+    left: 10%;
+    top: -20px;
+  }
+  
+.sb3:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+
+    right: 50%;
+    top: -18px;
+  }
+
+input[type="checkbox"] {
+    border: 2px solid #bcbcbc;
+    border-radius: 5px;
+  }
+.form-check-input{
+    border: 2px solid #bcbcbc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: rgb(255, 208, 0);
+    outline: none;
+    border: 0px;
+    padding: 10px;
+    font-size: 15px;
+}
+#submitData {
+    background-color: rgb(255, 208, 0);
+    outline: none;
+    border: 0px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.swal-footer { 
+    text-align: center !important; 
+} 
+.swal-modal .swal-footer { 
+    direction: rtl !important; 
+}
+  
+
+
+  
+  
